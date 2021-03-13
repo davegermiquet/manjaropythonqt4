@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Python QML App
+Comment=A Sample Python QML App
+Exec=python3 /usr/bin/main.py
+Icon=application.png
+Terminal=false
