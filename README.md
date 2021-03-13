@@ -1,0 +1,1 @@
+# manjaropythonqt4
