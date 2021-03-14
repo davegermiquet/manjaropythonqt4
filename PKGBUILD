@@ -20,7 +20,7 @@ noextract=()
 md5sums=() #generate with 'makepkg -g'
 
 package() {
-  export pkgname="main"
+  export pkgname="main"l
   export pkgdir="../myexamplepkg"
   export viewname="view.qml"
   export pkgsrc="src"
