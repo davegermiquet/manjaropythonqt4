@@ -21,6 +21,8 @@ There are some changtes (like the pyrcc5 i mentioned and loading the qml.qrc fil
 https://github.com/hovo1990/pyQt5-QML-examples/blob/master/tutOff3_property/main.py
 
 https://stackoverflow.com/questions/54836382/pyqt-import-qml-theme-from-different-directory https://maui-project.gitbook.io/mauikit/documentation-1/controls https://www.programmersought.com/article/2274746094/
+https://zetcode.com/gui/qtquick/
+https://stackoverflow.com/questions/37843212/pyqt5-module-qtquick-is-not-installed
 
 All these links should help you continue if you guys really want to code pythonm apps with pinephone.
 

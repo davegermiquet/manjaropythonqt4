@@ -21,7 +21,7 @@ md5sums=() #generate with 'makepkg -g'
 
 package() {
   export pkgname="main"
-  echo $pkgdir
+  echo $pkgdiyu
   export viewname="view.qml"
   export pkgsrc="src"
   mkdir -p $pkgdir
