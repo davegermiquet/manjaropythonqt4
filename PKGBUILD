@@ -20,8 +20,8 @@ noextract=()
 md5sums=() #generate with 'makepkg -g'
 
 package() {
-  export pkgname="main"l
-  export pkgdir="../myexamplepkg"
+  export pkgname="main"
+  echo $pkgdir
   export viewname="view.qml"
   export pkgsrc="src"
   mkdir -p $pkgdir
