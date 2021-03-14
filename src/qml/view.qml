@@ -1,4 +1,8 @@
+import org.kde.mauikit 1.0 as Maui
 import QtQuick 2.3
+
+Maui.Page {
+
 
 Rectangle {
     width: 200
@@ -9,4 +13,6 @@ Rectangle {
         anchors.centerIn: parent
         text: "Hello, World!"
     }
+}
+
 }
