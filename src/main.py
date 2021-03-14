@@ -4,7 +4,7 @@ from PyQt5.QtCore import pyqtProperty, QCoreApplication, QObject, QUrl
 from PyQt5.QtGui import QGuiApplication
 from PyQt5.QtQml import QQmlApplicationEngine
 from PyQt5.QtQml import qmlRegisterType, QQmlComponent, QQmlEngine
-import qml_rc
+import main_view
 os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
 app = QGuiApplication(sys.argv)
 app.setApplicationDisplayName('Example App')
