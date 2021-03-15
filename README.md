@@ -23,8 +23,32 @@ https://github.com/hovo1990/pyQt5-QML-examples/blob/master/tutOff3_property/main
 https://stackoverflow.com/questions/54836382/pyqt-import-qml-theme-from-different-directory https://maui-project.gitbook.io/mauikit/documentation-1/controls https://www.programmersought.com/article/2274746094/
 https://zetcode.com/gui/qtquick/
 https://stackoverflow.com/questions/37843212/pyqt5-module-qtquick-is-not-installed
+https://programtalk.com/python-examples/PyQt5.QtQml.QQmlComponent/
 
 All these links should help you continue if you guys really want to code pythonm apps with pinephone.
+
+Do to the missing QTQuick libraries on Manjaro im trying to do it this way:
+
+QQmlApplicationEngine engine;
+engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+QQuickWindow *window = qobject_cast<QQuickWindow*>(engine.rootObjects().at(0));
+if (!window) {
+    qFatal("Error: Your root item has to be a window.");
+    return -1;
+}
+window->show();
+QQuickItem *root = window->contentItem();
+
+QQmlComponent component(&engine, QUrl("qrc:/Button.qml"));
+QQuickItem *object = qobject_cast<QQuickItem*>(component.create());
+
+QQmlEngine::setObjectOwnership(object, QQmlEngine::CppOwnership);
+
+object->setParentItem(root);
+object->setParent(&engine);
+
+object->setProperty("color", QVariant(QColor(255, 255, 255)));
+object->setProperty("text", QVariant(QString("foo")));
 
 to makepkg
 
